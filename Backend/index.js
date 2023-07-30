@@ -5,7 +5,7 @@ const app = express();
 
 // Get the connection string from MongoDB Atlas
 const MONGO_URL =
-  "mongodb+srv://arunodaysingh137:nZDhpk9xJBlHCOsU@cluster0.ijeaou8.mongodb.net/?retryWrites=true&w=majority";
+  "";
 
 // Connect to MongoDB
 mongoose
