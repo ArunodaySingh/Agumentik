@@ -4,17 +4,19 @@ const mongoose = require("mongoose");
 const app = express();
 
 // Get the connection string from MongoDB Atlas
-const MONGO_URL =
-  "";
+const MONGO_URL = "";
 
 // Connect to MongoDB
 mongoose
-  .connect(MONGO_URL, {
+  .connect("", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
   .then((res) => {
     console.log("Mongodb Connected !");
+  })
+  .catch((err) => {
+    console.log("Mongodb not connected");
   });
 
 // Create a simple model
